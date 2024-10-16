@@ -1,15 +1,15 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Extension\Model;
+namespace WebBakery\Credit\Extension\Model;
 
-use OxidEsales\ModuleTemplate\Logging\Service\BasketProductLoggerServiceInterface;
+use WebBakery\Credit\Logging\Service\BasketProductLoggerServiceInterface;
 
 /**
  * @mixin \OxidEsales\Eshop\Application\Model\Basket

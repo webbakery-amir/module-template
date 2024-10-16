@@ -3,29 +3,29 @@ services:
     public: false
     autowire: true
 
-  OxidEsales\ModuleTemplate\Logging\Command\ReadLogsCommand:
-    class: OxidEsales\ModuleTemplate\Logging\Command\ReadLogsCommand
+  WebBakery\Credit\Logging\Command\ReadLogsCommand:
+    class: WebBakery\Credit\Logging\Command\ReadLogsCommand
     arguments:
       $logFilePath: '%app.log_file_path%'
     tags:
       - { name: 'console.command', command: 'oetemplate:logger:read' }
 
-  OxidEsales\ModuleTemplate\Logging\Service\BasketProductLoggerServiceInterface:
-    class: OxidEsales\ModuleTemplate\Logging\Service\BasketProductLoggerService
+  WebBakery\Credit\Logging\Service\BasketProductLoggerServiceInterface:
+    class: WebBakery\Credit\Logging\Service\BasketProductLoggerService
     public: true
     arguments:
-      $logger: '@OxidEsales\ModuleTemplate\Logger'
+      $logger: '@WebBakery\Credit\Logger'
 
-  OxidEsales\ModuleTemplate\Logger:
+  WebBakery\Credit\Logger:
     class: Monolog\Logger
-    factory: [ '@OxidEsales\ModuleTemplate\Logger\Factory', 'create' ]
+    factory: [ '@WebBakery\Credit\Logger\Factory', 'create' ]
 
-  OxidEsales\ModuleTemplate\Logger\Factory:
+  WebBakery\Credit\Logger\Factory:
     class: OxidEsales\EshopCommunity\Internal\Framework\Logger\Factory\MonologLoggerFactory
     arguments:
-      $configuration: '@OxidEsales\ModuleTemplate\Logger\Configuration'
+      $configuration: '@WebBakery\Credit\Logger\Configuration'
 
-  OxidEsales\ModuleTemplate\Logger\Configuration:
+  WebBakery\Credit\Logger\Configuration:
     class: OxidEsales\EshopCommunity\Internal\Framework\Logger\Configuration\MonologConfiguration
     arguments:
       $loggerName: 'Basket Logger'

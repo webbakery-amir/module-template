@@ -1,4 +1,4 @@
 table_storage:
-  table_name: oxmigrations_oe_moduletemplate
+  table_name: oxmigrations_Playground_module-template
 migrations_paths:
-  'OxidEsales\ModuleTemplate\Migrations': data
+  'WebBakery\Credit\Migrations': data

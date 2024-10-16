@@ -1,19 +1,19 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tests\Integration\Greeting\Service;
+namespace WebBakery\Credit\Tests\Integration\Greeting\Service;
 
 use OxidEsales\Eshop\Core\Language as CoreLanguage;
 use OxidEsales\Eshop\Core\Request as CoreRequest;
-use OxidEsales\ModuleTemplate\Extension\Model\User;
-use OxidEsales\ModuleTemplate\Greeting\Service\GreetingMessageService;
-use OxidEsales\ModuleTemplate\Settings\Service\ModuleSettingsServiceInterface;
+use WebBakery\Credit\Extension\Model\User;
+use WebBakery\Credit\Greeting\Service\GreetingMessageService;
+use WebBakery\Credit\Settings\Service\ModuleSettingsServiceInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 

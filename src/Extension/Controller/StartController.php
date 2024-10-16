@@ -1,18 +1,18 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Extension\Controller;
+namespace WebBakery\Credit\Extension\Controller;
 
 use OxidEsales\Eshop\Application\Model\User as EshopModelUser;
 use OxidEsales\Eshop\Core\Registry as EshopRegistry;
-use OxidEsales\ModuleTemplate\Greeting\Service\GreetingMessageServiceInterface;
-use OxidEsales\ModuleTemplate\Settings\Service\ModuleSettingsServiceInterface;
+use WebBakery\Credit\Greeting\Service\GreetingMessageServiceInterface;
+use WebBakery\Credit\Settings\Service\ModuleSettingsServiceInterface;
 
 /**
  * @eshopExtension

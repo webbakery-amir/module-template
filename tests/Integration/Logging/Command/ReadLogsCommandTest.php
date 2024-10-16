@@ -1,16 +1,16 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tests\Integration\Logging\Command;
+namespace WebBakery\Credit\Tests\Integration\Logging\Command;
 
 use org\bovigo\vfs\vfsStream;
-use OxidEsales\ModuleTemplate\Logging\Command\ReadLogsCommand;
+use WebBakery\Credit\Logging\Command\ReadLogsCommand;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Application;

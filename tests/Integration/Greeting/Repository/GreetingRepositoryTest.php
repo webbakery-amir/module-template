@@ -1,19 +1,19 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tests\Integration\Greeting\Repository;
+namespace WebBakery\Credit\Tests\Integration\Greeting\Repository;
 
 use OxidEsales\Eshop\Application\Model\User as EshopModelUser;
 use OxidEsales\EshopCommunity\Internal\Framework\Database\QueryBuilderFactoryInterface;
 use OxidEsales\EshopCommunity\Tests\Integration\IntegrationTestCase;
-use OxidEsales\ModuleTemplate\Greeting\Repository\GreetingRepository;
-use OxidEsales\ModuleTemplate\Greeting\Repository\GreetingRepositoryInterface;
+use WebBakery\Credit\Greeting\Repository\GreetingRepository;
+use WebBakery\Credit\Greeting\Repository\GreetingRepositoryInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 
 #[CoversClass(GreetingRepository::class)]

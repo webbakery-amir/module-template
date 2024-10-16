@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
@@ -14,26 +14,26 @@ $sMetadataVersion = '2.1';
  * Module information
  */
 $aModule = [
-    'id'          => 'oe_moduletemplate',
-    'title'       => 'OxidEsales Module Template (OEMT)',
+    'id'          => 'Playground_module-template',
+    'title'       => 'CHANGE MY TITLE',
     'description' =>  '',
     'thumbnail'   => 'pictures/logo.png',
     'version'     => '3.0.0',
-    'author'      => 'OXID eSales AG',
+    'author'      => 'Web Bakery',
     'url'         => '',
     'email'       => '',
     'extend'      => [
-        \OxidEsales\Eshop\Application\Controller\StartController::class => \OxidEsales\ModuleTemplate\Extension\Controller\StartController::class,
-        \OxidEsales\Eshop\Application\Model\Basket::class => \OxidEsales\ModuleTemplate\Extension\Model\Basket::class,
-        \OxidEsales\Eshop\Application\Model\User::class => \OxidEsales\ModuleTemplate\Extension\Model\User::class,
+        \OxidEsales\Eshop\Application\Controller\StartController::class => \WebBakery\Credit\Extension\Controller\StartController::class,
+        \OxidEsales\Eshop\Application\Model\Basket::class => \WebBakery\Credit\Extension\Model\Basket::class,
+        \OxidEsales\Eshop\Application\Model\User::class => \WebBakery\Credit\Extension\Model\User::class,
     ],
     'controllers' => [
-        'oemtgreeting' => \OxidEsales\ModuleTemplate\Greeting\Controller\GreetingController::class,
-        'oemt_admin_greeting' => \OxidEsales\ModuleTemplate\Greeting\Controller\Admin\GreetingAdminController::class,
+        'oemtgreeting' => \WebBakery\Credit\Greeting\Controller\GreetingController::class,
+        'oemt_admin_greeting' => \WebBakery\Credit\Greeting\Controller\Admin\GreetingAdminController::class,
     ],
     'events' => [
-        'onActivate' => '\OxidEsales\ModuleTemplate\Core\ModuleEvents::onActivate',
-        'onDeactivate' => '\OxidEsales\ModuleTemplate\Core\ModuleEvents::onDeactivate'
+        'onActivate' => '\WebBakery\Credit\Core\ModuleEvents::onActivate',
+        'onDeactivate' => '\WebBakery\Credit\Core\ModuleEvents::onDeactivate'
     ],
     'settings' => [
         //TODO: add help texts for settings to explain possibilities and point out which ones only serve as example

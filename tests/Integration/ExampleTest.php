@@ -1,13 +1,13 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tests\Integration\Service;
+namespace WebBakery\Credit\Tests\Integration\Service;
 
 use OxidEsales\Eshop\Application\Controller\StartController as EshopStartController;
 use PHPUnit\Framework\TestCase;

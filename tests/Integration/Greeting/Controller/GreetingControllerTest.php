@@ -1,24 +1,24 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tests\Integration\Greeting\Controller;
+namespace WebBakery\Credit\Tests\Integration\Greeting\Controller;
 
 use OxidEsales\Eshop\Application\Model\User as EshopModelUser;
 use OxidEsales\Eshop\Core\Registry;
 use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
-use OxidEsales\ModuleTemplate\Core\Module as ModuleCore;
-use OxidEsales\ModuleTemplate\Extension\Model\User as ModuleUser;
-use OxidEsales\ModuleTemplate\Greeting\Controller\GreetingController;
-use OxidEsales\ModuleTemplate\Settings\Service\ModuleSettingsServiceInterface;
-use OxidEsales\ModuleTemplate\Tests\Integration\IntegrationTestCase;
-use OxidEsales\ModuleTemplate\Tracker\Model\TrackerModel;
-use OxidEsales\ModuleTemplate\Tracker\Repository\TrackerRepositoryInterface;
+use WebBakery\Credit\Core\Module as ModuleCore;
+use WebBakery\Credit\Extension\Model\User as ModuleUser;
+use WebBakery\Credit\Greeting\Controller\GreetingController;
+use WebBakery\Credit\Settings\Service\ModuleSettingsServiceInterface;
+use WebBakery\Credit\Tests\Integration\IntegrationTestCase;
+use WebBakery\Credit\Tracker\Model\TrackerModel;
+use WebBakery\Credit\Tracker\Repository\TrackerRepositoryInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 
 /*
@@ -94,7 +94,7 @@ final class GreetingControllerTest extends IntegrationTestCase
             $controller->setUser($this->createTestUser());
         }
 
-        $this->assertSame('@oe_moduletemplate/templates/greetingtemplate', $controller->render());
+        $this->assertSame('@Playground_module-template/templates/greetingtemplate', $controller->render());
 
         $viewData = $controller->getViewData();
         $this->assertSame($expected['greeting'], $viewData[ModuleCore::OEMT_GREETING_TEMPLATE_VARNAME]);

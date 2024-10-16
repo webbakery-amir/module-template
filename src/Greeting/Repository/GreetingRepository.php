@@ -1,17 +1,17 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Greeting\Repository;
+namespace WebBakery\Credit\Greeting\Repository;
 
 use Doctrine\DBAL\Query\QueryBuilder;
 use OxidEsales\EshopCommunity\Internal\Framework\Database\QueryBuilderFactoryInterface;
-use OxidEsales\ModuleTemplate\Extension\Model\User;
+use WebBakery\Credit\Extension\Model\User;
 
 class GreetingRepository implements GreetingRepositoryInterface
 {

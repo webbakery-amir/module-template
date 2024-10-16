@@ -1,20 +1,20 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tests\Codeception\Acceptance\Admin;
+namespace WebBakery\Credit\Tests\Codeception\Acceptance\Admin;
 
 use OxidEsales\Codeception\Module\Translation\Translator;
-use OxidEsales\ModuleTemplate\Tests\Codeception\Support\AcceptanceTester;
+use WebBakery\Credit\Tests\Codeception\Support\AcceptanceTester;
 
 /**
- * @group oe_moduletemplate
- * @group oe_moduletemplate_admin
+ * @group Playground_module-template
+ * @group Playground_module-template_admin
  */
 final class GreetingAdminCest
 {

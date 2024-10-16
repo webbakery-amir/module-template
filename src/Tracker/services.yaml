@@ -3,14 +3,14 @@ services:
     public: false
     autowire: true
 
-  OxidEsales\ModuleTemplate\Tracker\Repository\TrackerRepositoryInterface:
-    class: OxidEsales\ModuleTemplate\Tracker\Repository\TrackerRepository
+  WebBakery\Credit\Tracker\Repository\TrackerRepositoryInterface:
+    class: WebBakery\Credit\Tracker\Repository\TrackerRepository
     public: true
 
-  OxidEsales\ModuleTemplate\Tracker\Service\TrackerServiceInterface:
-    class: OxidEsales\ModuleTemplate\Tracker\Service\TrackerService
+  WebBakery\Credit\Tracker\Service\TrackerServiceInterface:
+    class: WebBakery\Credit\Tracker\Service\TrackerService
     public: true
 
-  OxidEsales\ModuleTemplate\Tracker\Subscriber\BeforeModelUpdate:
-    class: OxidEsales\ModuleTemplate\Tracker\Subscriber\BeforeModelUpdate
+  WebBakery\Credit\Tracker\Subscriber\BeforeModelUpdate:
+    class: WebBakery\Credit\Tracker\Subscriber\BeforeModelUpdate
     tags: [ 'kernel.event_subscriber' ]

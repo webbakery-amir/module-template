@@ -1,20 +1,20 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tests\Unit\Greeting\Infrastructure;
+namespace WebBakery\Credit\Tests\Unit\Greeting\Infrastructure;
 
 use OxidEsales\Eshop\Application\Model\User;
-use OxidEsales\ModuleTemplate\Greeting\Infrastructure\UserModelFactory;
+use WebBakery\Credit\Greeting\Infrastructure\UserModelFactory;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \OxidEsales\ModuleTemplate\Greeting\Infrastructure\UserModelFactory
+ * @covers \WebBakery\Credit\Greeting\Infrastructure\UserModelFactory
  */
 class UserModelFactoryTest extends TestCase
 {

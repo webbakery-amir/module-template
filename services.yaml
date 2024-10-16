@@ -1,5 +1,5 @@
 parameters:
-  app.log_file_path: '/var/www/source/log/oe_moduletemplate.log'
+  app.log_file_path: '/var/www/source/log/Playground_module-template.log'
 
 imports:
   - { resource: src/Greeting/services.yaml }
@@ -13,6 +13,6 @@ services:
     public: false
     autowire: true
 
-  OxidEsales\ModuleTemplate\Core\Registry:
+  WebBakery\Credit\Core\Registry:
     class: OxidEsales\Eshop\Core\Registry
     public: true

@@ -3,20 +3,20 @@ services:
     public: false
     autowire: true
     bind:
-      OxidEsales\Eshop\Core\Request: '@=service("OxidEsales\\ModuleTemplate\\Core\\Registry").getRequest()'
-      OxidEsales\Eshop\Core\Language: '@=service("OxidEsales\\ModuleTemplate\\Core\\Registry").getLang()'
+      OxidEsales\Eshop\Core\Request: '@=service("WebBakery\\Credit\\Core\\Registry").getRequest()'
+      OxidEsales\Eshop\Core\Language: '@=service("WebBakery\\Credit\\Core\\Registry").getLang()'
 
-  OxidEsales\ModuleTemplate\Greeting\Repository\GreetingRepositoryInterface:
-    class: OxidEsales\ModuleTemplate\Greeting\Repository\GreetingRepository
+  WebBakery\Credit\Greeting\Repository\GreetingRepositoryInterface:
+    class: WebBakery\Credit\Greeting\Repository\GreetingRepository
     public: true
 
-  OxidEsales\ModuleTemplate\Greeting\Service\GreetingMessageServiceInterface:
-    class: OxidEsales\ModuleTemplate\Greeting\Service\GreetingMessageService
+  WebBakery\Credit\Greeting\Service\GreetingMessageServiceInterface:
+    class: WebBakery\Credit\Greeting\Service\GreetingMessageService
     public: true
 
-  OxidEsales\ModuleTemplate\Greeting\Infrastructure\UserModelFactoryInterface:
-    class: OxidEsales\ModuleTemplate\Greeting\Infrastructure\UserModelFactory
+  WebBakery\Credit\Greeting\Infrastructure\UserModelFactoryInterface:
+    class: WebBakery\Credit\Greeting\Infrastructure\UserModelFactory
 
-  OxidEsales\ModuleTemplate\Greeting\Service\UserServiceInterface:
-    class: OxidEsales\ModuleTemplate\Greeting\Service\UserService
+  WebBakery\Credit\Greeting\Service\UserServiceInterface:
+    class: WebBakery\Credit\Greeting\Service\UserService
     public: true

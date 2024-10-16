@@ -1,20 +1,20 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tests\Integration\Tracker\Repository;
+namespace WebBakery\Credit\Tests\Integration\Tracker\Repository;
 
 use OxidEsales\Eshop\Core\Registry;
 use OxidEsales\EshopCommunity\Internal\Framework\Database\QueryBuilderFactoryInterface;
 use OxidEsales\EshopCommunity\Tests\Integration\IntegrationTestCase;
-use OxidEsales\ModuleTemplate\Tracker\Model\TrackerModel;
-use OxidEsales\ModuleTemplate\Tracker\Repository\TrackerRepository;
-use OxidEsales\ModuleTemplate\Tracker\Repository\TrackerRepositoryInterface;
+use WebBakery\Credit\Tracker\Model\TrackerModel;
+use WebBakery\Credit\Tracker\Repository\TrackerRepository;
+use WebBakery\Credit\Tracker\Repository\TrackerRepositoryInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 
 #[CoversClass(TrackerRepository::class)]

@@ -1,13 +1,13 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Greeting\Infrastructure;
+namespace WebBakery\Credit\Greeting\Infrastructure;
 
 use OxidEsales\Eshop\Application\Model\User;
 

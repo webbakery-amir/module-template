@@ -1,5 +1,5 @@
 {
-    "name": "oxid-esales/module-template",
+    "name": "web-bakery/oxid-credit",
     "description": "Module with solution examples",
     "type": "oxideshop-module",
     "keywords": [
@@ -38,8 +38,8 @@
     },
     "autoload": {
         "psr-4": {
-            "OxidEsales\\ModuleTemplate\\": "src/",
-            "OxidEsales\\ModuleTemplate\\Tests\\": "tests/"
+            "WebBakery\\Credit\\": "src/",
+            "WebBakery\\Credit\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -69,7 +69,7 @@
 
         "tests-codeception": [
             "Composer\\Config::disableProcessTimeout",
-            "THEME_ID=apex MODULE_IDS=oe_moduletemplate SHOP_ROOT_PATH=/var/www vendor/bin/codecept run Acceptance -c tests/codeception.yml --no-redirect"
+            "THEME_ID=apex MODULE_IDS=Playground_module-template SHOP_ROOT_PATH=/var/www vendor/bin/codecept run Acceptance -c tests/codeception.yml --no-redirect"
         ],
 
         "tests-all": [

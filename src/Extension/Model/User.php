@@ -1,17 +1,17 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Extension\Model;
+namespace WebBakery\Credit\Extension\Model;
 
 use OxidEsales\Eshop\Core\Model\BaseModel;
-use OxidEsales\ModuleTemplate\Greeting\Model\PersonalGreetingUser;
-use OxidEsales\ModuleTemplate\Greeting\Model\PersonalGreetingUserInterface;
+use WebBakery\Credit\Greeting\Model\PersonalGreetingUser;
+use WebBakery\Credit\Greeting\Model\PersonalGreetingUserInterface;
 
 /**
  * @eshopExtension

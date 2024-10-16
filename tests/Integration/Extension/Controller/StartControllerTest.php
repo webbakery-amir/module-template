@@ -1,21 +1,21 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tests\Integration\Extension\Controller;
+namespace WebBakery\Credit\Tests\Integration\Extension\Controller;
 
 use OxidEsales\Eshop\Application\Controller\StartController as EshopStartController;
 use OxidEsales\Eshop\Application\Model\User as EshopModelUser;
 use OxidEsales\Eshop\Core\Registry;
 use OxidEsales\Eshop\Core\Registry as EshopRegistry;
-use OxidEsales\ModuleTemplate\Extension\Controller\StartController;
-use OxidEsales\ModuleTemplate\Settings\Service\ModuleSettingsServiceInterface;
-use OxidEsales\ModuleTemplate\Tests\Integration\IntegrationTestCase;
+use WebBakery\Credit\Extension\Controller\StartController;
+use WebBakery\Credit\Settings\Service\ModuleSettingsServiceInterface;
+use WebBakery\Credit\Tests\Integration\IntegrationTestCase;
 use PHPUnit\Framework\Attributes\CoversClass;
 
 /*

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
@@ -9,12 +9,12 @@
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tracker\Subscriber;
+namespace WebBakery\Credit\Tracker\Subscriber;
 
 use OxidEsales\Eshop\Application\Model\User as EshopModelUser;
 use OxidEsales\EshopCommunity\Internal\Transition\ShopEvents\BeforeModelUpdateEvent;
-use OxidEsales\ModuleTemplate\Greeting\Model\PersonalGreetingUserInterface;
-use OxidEsales\ModuleTemplate\Tracker\Service\TrackerServiceInterface;
+use WebBakery\Credit\Greeting\Model\PersonalGreetingUserInterface;
+use WebBakery\Credit\Tracker\Service\TrackerServiceInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**

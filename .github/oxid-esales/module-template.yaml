@@ -9,17 +9,17 @@ install_shop_with_modules:
               "oxid-esales/twig-component": "{{ .Data.global.composer.dev_ref }}",
               "oxid-esales/twig-admin-theme": "{{ .Data.global.composer.dev_ref }}",
               "oxid-esales/apex-theme": "{{ .Data.global.composer.dev_ref }}",
-              "oxid-esales/module-template": "{{ .Data.global.composer.ref_name }}"
+              "web-bakery/oxid-credit": "{{ .Data.global.composer.ref_name }}"
           },
           "repositories": {
-            "oxid-esales/module-template": {
+            "web-bakery/oxid-credit": {
               "type": "git",
               "url": "https://github.com/OXID-eSales/module-template.git"
             }
           }
       }
   custom_script_container: |
-    vendor/bin/oe-console oe:module:activate oe_moduletemplate
+    vendor/bin/oe-console oe:module:activate Playground_module-template
 
 runscript: &runscript
   matrix:
@@ -30,7 +30,7 @@ runscript: &runscript
         "module_template:tests-codeception"
       ]
   module_template:
-    path: 'vendor/oxid-esales/module-template'
+    path: 'vendor/web-bakery/oxid-credit'
 
 runslim:
   <<: *runscript
@@ -45,10 +45,10 @@ runslim:
 sonarcloud:
   matrix:
     testplan: '["-"]'
-  strip_path: '/var/www/vendor/oxid-esales/module-template/'
-  project_key: 'OXID-eSales_module-template'
-  project_name: 'oxid-esales/module-template'
-  organization: 'oxid-esales'
+  strip_path: '/var/www/vendor/web-bakery/oxid-credit/'
+  project_key: 'CHANGE SONARCLOUD ORGANIZATION'
+  project_name: 'web-bakery/oxid-credit'
+  organization: 'CHANGE SONARCLOUD ORGANIZATION'
   parameters: |
     -Dsonar.language=php
     -Dsonar.scm.provider=git

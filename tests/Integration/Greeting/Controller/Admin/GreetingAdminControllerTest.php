@@ -1,18 +1,18 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tests\Integration\Controller\Admin;
+namespace WebBakery\Credit\Tests\Integration\Controller\Admin;
 
 use OxidEsales\Eshop\Application\Model\User as EshopModelUser;
-use OxidEsales\ModuleTemplate\Greeting\Controller\Admin\GreetingAdminController;
-use OxidEsales\ModuleTemplate\Core\Module as ModuleCore;
-use OxidEsales\ModuleTemplate\Tests\Integration\IntegrationTestCase;
+use WebBakery\Credit\Greeting\Controller\Admin\GreetingAdminController;
+use WebBakery\Credit\Core\Module as ModuleCore;
+use WebBakery\Credit\Tests\Integration\IntegrationTestCase;
 
 /*
  * We want to test controller behavior going 'full way'.
@@ -31,7 +31,7 @@ final class GreetingAdminControllerTest extends IntegrationTestCase
         $controller = oxNew(GreetingAdminController::class);
         $controller->setEditObjectId(self::TEST_USER_ID);
 
-        $this->assertSame('@oe_moduletemplate/admin/user_greetings', $controller->render());
+        $this->assertSame('@Playground_module-template/admin/user_greetings', $controller->render());
 
         $viewData = $controller->getViewData();
 

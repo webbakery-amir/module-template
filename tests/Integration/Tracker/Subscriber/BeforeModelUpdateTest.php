@@ -1,19 +1,19 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tests\Unit\Tracker\Subscriber;
+namespace WebBakery\Credit\Tests\Unit\Tracker\Subscriber;
 
 use OxidEsales\EshopCommunity\Internal\Transition\ShopEvents\BeforeModelUpdateEvent;
-use OxidEsales\ModuleTemplate\Extension\Model\User;
-use OxidEsales\ModuleTemplate\Tracker\Model\TrackerModel;
-use OxidEsales\ModuleTemplate\Tracker\Service\TrackerServiceInterface;
-use OxidEsales\ModuleTemplate\Tracker\Subscriber\BeforeModelUpdate;
+use WebBakery\Credit\Extension\Model\User;
+use WebBakery\Credit\Tracker\Model\TrackerModel;
+use WebBakery\Credit\Tracker\Service\TrackerServiceInterface;
+use WebBakery\Credit\Tracker\Subscriber\BeforeModelUpdate;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 

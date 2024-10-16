@@ -1,21 +1,21 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Greeting\Controller;
+namespace WebBakery\Credit\Greeting\Controller;
 
 use OxidEsales\Eshop\Application\Controller\FrontendController;
 use OxidEsales\Eshop\Application\Model\User as EshopModelUser;
-use OxidEsales\ModuleTemplate\Core\Module as ModuleCore;
-use OxidEsales\ModuleTemplate\Extension\Model\User as TemplateModelUser;
-use OxidEsales\ModuleTemplate\Greeting\Service\GreetingMessageServiceInterface;
-use OxidEsales\ModuleTemplate\Settings\Service\ModuleSettingsServiceInterface;
-use OxidEsales\ModuleTemplate\Tracker\Repository\TrackerRepositoryInterface;
+use WebBakery\Credit\Core\Module as ModuleCore;
+use WebBakery\Credit\Extension\Model\User as TemplateModelUser;
+use WebBakery\Credit\Greeting\Service\GreetingMessageServiceInterface;
+use WebBakery\Credit\Settings\Service\ModuleSettingsServiceInterface;
+use WebBakery\Credit\Tracker\Repository\TrackerRepositoryInterface;
 
 /**
  * @extendable-class
@@ -32,7 +32,7 @@ class GreetingController extends FrontendController
      *
      * @var string
      */
-    protected $_sThisTemplate = '@oe_moduletemplate/templates/greetingtemplate';
+    protected $_sThisTemplate = '@Playground_module-template/templates/greetingtemplate';
 
     /**
      * Rendering method.

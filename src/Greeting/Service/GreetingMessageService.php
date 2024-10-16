@@ -1,20 +1,20 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Greeting\Service;
+namespace WebBakery\Credit\Greeting\Service;
 
 use OxidEsales\Eshop\Application\Model\User as EshopModelUser;
 use OxidEsales\Eshop\Core\Language as EshopLanguage;
 use OxidEsales\Eshop\Core\Request as EshopRequest;
-use OxidEsales\ModuleTemplate\Core\Module as ModuleCore;
-use OxidEsales\ModuleTemplate\Extension\Model\User as TemplateModelUser;
-use OxidEsales\ModuleTemplate\Settings\Service\ModuleSettingsServiceInterface;
+use WebBakery\Credit\Core\Module as ModuleCore;
+use WebBakery\Credit\Extension\Model\User as TemplateModelUser;
+use WebBakery\Credit\Settings\Service\ModuleSettingsServiceInterface;
 
 class GreetingMessageService implements GreetingMessageServiceInterface
 {

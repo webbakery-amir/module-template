@@ -1,17 +1,17 @@
 <?php
 
 /**
- * Copyright © OXID eSales AG. All rights reserved.
+ * Copyright © Web Bakery. All rights reserved.
  * See LICENSE file for license details.
  */
 
 declare(strict_types=1);
 
-namespace OxidEsales\ModuleTemplate\Tests\Settings\Service;
+namespace WebBakery\Credit\Tests\Settings\Service;
 
 use OxidEsales\EshopCommunity\Internal\Framework\Module\Facade\ModuleSettingService;
-use OxidEsales\ModuleTemplate\Core\Module;
-use OxidEsales\ModuleTemplate\Settings\Service\ModuleSettingsService;
+use WebBakery\Credit\Core\Module;
+use WebBakery\Credit\Settings\Service\ModuleSettingsService;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\String\UnicodeString;
@@ -46,7 +46,7 @@ final class ModuleSettingsTest extends TestCase
             ],
             [
                 'value' => ModuleSettingsService::GREETING_MODE_GENERIC,
-                'expected' => \OxidEsales\ModuleTemplate\Settings\Service\ModuleSettingsService::GREETING_MODE_GENERIC
+                'expected' => \WebBakery\Credit\Settings\Service\ModuleSettingsService::GREETING_MODE_GENERIC
             ],
             [
                 'value' => ModuleSettingsService::GREETING_MODE_PERSONAL,
@@ -73,7 +73,7 @@ final class ModuleSettingsTest extends TestCase
     {
         return [
             [
-                'value' => \OxidEsales\ModuleTemplate\Settings\Service\ModuleSettingsService::GREETING_MODE_GENERIC,
+                'value' => \WebBakery\Credit\Settings\Service\ModuleSettingsService::GREETING_MODE_GENERIC,
                 'expected' => false
             ],
             [
@@ -102,7 +102,7 @@ final class ModuleSettingsTest extends TestCase
     {
         $mssMock = $this->createPartialMock(ModuleSettingService::class, ['getBoolean']);
         $mssMock->method('getBoolean')->willReturnMap([
-            [\OxidEsales\ModuleTemplate\Settings\Service\ModuleSettingsService::LOGGER_STATUS, Module::MODULE_ID, true]
+            [\WebBakery\Credit\Settings\Service\ModuleSettingsService::LOGGER_STATUS, Module::MODULE_ID, true]
         ]);
 
         $sut = new ModuleSettingsService($mssMock);

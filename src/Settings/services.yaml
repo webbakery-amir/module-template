@@ -3,6 +3,6 @@ services:
     public: false
     autowire: true
 
-  OxidEsales\ModuleTemplate\Settings\Service\ModuleSettingsServiceInterface:
-    class: OxidEsales\ModuleTemplate\Settings\Service\ModuleSettingsService
+  WebBakery\Credit\Settings\Service\ModuleSettingsServiceInterface:
+    class: WebBakery\Credit\Settings\Service\ModuleSettingsService
     public: true

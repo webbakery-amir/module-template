@@ -52,8 +52,8 @@ modules:
         paths:
           - Application/views/apex
           - Application/views/admin_twig
-          - ../vendor/oxid-esales/module-template/views/admin_twig
-          - ../vendor/oxid-esales/module-template/translations
+          - ../vendor/web-bakery/oxid-credit/views/admin_twig
+          - ../vendor/web-bakery/oxid-credit/translations
     - \OxidEsales\Codeception\Module\OxideshopModules
 step_decorators:
     - \Codeception\Step\Retry
