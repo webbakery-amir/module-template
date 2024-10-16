@@ -11,7 +11,7 @@ namespace WebBakery\Credit\Core;
 
 final class Module
 {
-    public const MODULE_ID = 'Playground_module-template';
+    public const MODULE_ID = 'wb_credit';
 
     public const OEMT_GREETING_TEMPLATE_VARNAME = 'oemt_greeting';
 

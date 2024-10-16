@@ -18,6 +18,6 @@ final class Acceptance extends \Codeception\Module
 {
     public function _beforeSuite($settings = []): void
     {
-        exec((new Facts())->getShopRootPath() . '/bin/oe-console oe:module:activate Playground_module-template');
+        exec((new Facts())->getShopRootPath() . '/bin/oe-console oe:module:activate wb_credit');
     }
 }

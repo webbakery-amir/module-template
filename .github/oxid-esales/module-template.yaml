@@ -19,7 +19,7 @@ install_shop_with_modules:
           }
       }
   custom_script_container: |
-    vendor/bin/oe-console oe:module:activate Playground_module-template
+    vendor/bin/oe-console oe:module:activate wb_credit
 
 runscript: &runscript
   matrix:

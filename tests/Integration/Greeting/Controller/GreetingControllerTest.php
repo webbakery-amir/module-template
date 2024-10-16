@@ -94,7 +94,7 @@ final class GreetingControllerTest extends IntegrationTestCase
             $controller->setUser($this->createTestUser());
         }
 
-        $this->assertSame('@Playground_module-template/templates/greetingtemplate', $controller->render());
+        $this->assertSame('@wb_credit/templates/greetingtemplate', $controller->render());
 
         $viewData = $controller->getViewData();
         $this->assertSame($expected['greeting'], $viewData[ModuleCore::OEMT_GREETING_TEMPLATE_VARNAME]);

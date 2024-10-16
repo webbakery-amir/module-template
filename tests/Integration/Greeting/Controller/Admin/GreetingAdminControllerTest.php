@@ -31,7 +31,7 @@ final class GreetingAdminControllerTest extends IntegrationTestCase
         $controller = oxNew(GreetingAdminController::class);
         $controller->setEditObjectId(self::TEST_USER_ID);
 
-        $this->assertSame('@Playground_module-template/admin/user_greetings', $controller->render());
+        $this->assertSame('@wb_credit/admin/user_greetings', $controller->render());
 
         $viewData = $controller->getViewData();
 

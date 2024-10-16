@@ -13,8 +13,8 @@ use OxidEsales\Codeception\Module\Translation\Translator;
 use WebBakery\Credit\Tests\Codeception\Support\AcceptanceTester;
 
 /**
- * @group Playground_module-template
- * @group Playground_module-template_admin
+ * @group wb_credit
+ * @group wb_credit_admin
  */
 final class GreetingAdminCest
 {

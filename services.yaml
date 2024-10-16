@@ -1,5 +1,5 @@
 parameters:
-  app.log_file_path: '/var/www/source/log/Playground_module-template.log'
+  app.log_file_path: '/var/www/source/log/wb_credit.log'
 
 imports:
   - { resource: src/Greeting/services.yaml }

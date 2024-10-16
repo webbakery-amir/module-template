@@ -16,7 +16,7 @@ use WebBakery\Credit\Greeting\Service\UserServiceInterface;
 
 class GreetingAdminController extends AdminController
 {
-    protected $_sThisTemplate = '@Playground_module-template/admin/user_greetings';
+    protected $_sThisTemplate = '@wb_credit/admin/user_greetings';
 
     public function render()
     {

@@ -1,4 +1,4 @@
 table_storage:
-  table_name: oxmigrations_Playground_module-template
+  table_name: oxmigrations_wb_credit
 migrations_paths:
   'WebBakery\Credit\Migrations': data

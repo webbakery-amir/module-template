@@ -32,7 +32,7 @@ class GreetingController extends FrontendController
      *
      * @var string
      */
-    protected $_sThisTemplate = '@Playground_module-template/templates/greetingtemplate';
+    protected $_sThisTemplate = '@wb_credit/templates/greetingtemplate';
 
     /**
      * Rendering method.

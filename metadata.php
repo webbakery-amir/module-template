@@ -14,7 +14,7 @@ $sMetadataVersion = '2.1';
  * Module information
  */
 $aModule = [
-    'id'          => 'Playground_module-template',
+    'id'          => 'wb_credit',
     'title'       => 'CHANGE MY TITLE',
     'description' =>  '',
     'thumbnail'   => 'pictures/logo.png',

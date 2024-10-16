@@ -14,8 +14,8 @@ use WebBakery\Credit\Core\Module;
 use WebBakery\Credit\Tests\Codeception\Support\AcceptanceTester;
 
 /**
- * @group Playground_module-template
- * @group Playground_module-template_module
+ * @group wb_credit
+ * @group wb_credit_module
  */
 final class ModuleCest
 {
