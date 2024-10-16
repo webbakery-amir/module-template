@@ -14,7 +14,7 @@ install_shop_with_modules:
           "repositories": {
             "web-bakery/oxid-credit": {
               "type": "git",
-              "url": "https://github.com/OXID-eSales/module-template.git"
+              "url": "https://github.com/webbakery-amir/module-template"
             }
           }
       }
